@@ -1,0 +1,92 @@
+p,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+}
+.container__weather--wrapper{
+    padding: 5px 5px;
+    border: 1px solid red;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    display: flex;
+    flex-direction: column;
+}
+.weather__form{
+    display: inline-block;
+}
+.weather__form--input{
+    background-color: #240b36;
+    opacity: 0.8;
+    border: unset;
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: #fff;
+    &::placeholder{
+        color: #fff;
+        font-weight: 300;
+    }
+    &:focus{
+        outline-color: #c31432;
+    }
+}
+.weather__btn{
+    background-color: #c31432;
+    border: unset;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.weather__list{
+    list-style: none;
+    padding: 0;
+}
+.weather__name{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.weather__degree{
+    color: #fff;
+    font-size: 16px;
+}
+.desc-icon{
+    display: flex;
+    align-items: center;
+}
+.weather__desc{
+    text-transform: capitalize;
+    margin-left: 5px;
+    color: #fff;
+}
+.weather__humidity{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.weather__wind{
+    color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+    .weather__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .weather__btn{
+        margin-top: 5px;
+    }
+}
+
+//phones
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 375px;
+    }
+}

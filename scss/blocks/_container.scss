@@ -1,0 +1,26 @@
+.container{
+    width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//tablets 
+@media only screen and (max-width: 1023px) {
+    .container{
+        width: 625px;
+        margin: 0 auto;
+    }
+}
+
+//phones
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 375px;
+        margin: 0 auto;
+    }
+}

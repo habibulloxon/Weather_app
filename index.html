@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather.com</title>
+</head>
+<body>
+    <div class="container wrapper">
+        <div class="container__weather--wrapper">
+        <form class="weather__form" id="form">
+            <input class="weather__form--input" type="text" id="city" placeholder="City" required autocomplete="off">
+            <button class="weather__btn" id="btn">Get weather</button>
+        </form>
+            <ul class="weather__list" id="list">
+                <li id="item">
+                    <h3 class="weather__name" id="name"></h3>
+                    <p class="weather__degree" id="degrees"></p>
+                    <div class="desc-icon">
+                        <img src="" alt="" id="icon">
+                        <p class="weather__desc" id="description"></p>
+                    </div>
+                    <p class="weather__humidity" id="humidity"></p>
+                    <p class="weather__wind" id="wind"></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
